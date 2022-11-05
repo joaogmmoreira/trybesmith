@@ -1,11 +1,11 @@
 import { Request, Response } from 'express';
-import ProductService from '../services/products.services';
+import ProductsService from '../services/products.services';
 
-export default class ProductController {
-  public service: ProductService;
+export default class ProductsController {
+  public service: ProductsService;
 
   constructor() {
-    this.service = new ProductService();
+    this.service = new ProductsService();
   }
 
   async getAllProducts(_req: Request, res: Response) {
