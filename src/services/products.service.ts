@@ -13,4 +13,9 @@ export default class ProductsService {
     const result: IProduct[] = await this.model.getAllProducts();
     return result;
   }
+
+  async registerProduct(data: IProduct): Promise<IProduct> {
+    const result = await this.model.registerProduct(data);
+    return result;
+  }
 }
